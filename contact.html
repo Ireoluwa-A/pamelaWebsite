@@ -1,0 +1,140 @@
+<!DOCTYPE html> 	
+<html lang="en"> 	
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="author" content="Your name">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems">
+	<meta name="description" content="Your Name professional website">
+
+	<title>Pamela's Diner</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" media="all" type="text/css" href="css/contactform.css">
+
+	<!-- Fav Icons css -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/scripts.js"></script>
+	
+</head>
+
+<body> 
+	<div class="nav_container">
+		<nav>
+			<div class="logo">
+				<a href = "index.html"> <img class="logo" src="images/logo.png"> </a>
+			</div>
+			<ul class="nav_links">
+				<li><a href="menu.html">Menu</a> </li>
+				<li><a href="locationsandhours.html">Locations & Hours</a></li>
+				<li><a href="contact.html" class="selected">Contact Us</a></li>
+				<li><a href="media.html">What's Everyone Saying</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="form_background">
+		<div class="background_blur">
+			
+			<div class="form_container"> 
+				
+					<div class="form_title">
+						<h3>Join Our Mailing List</h3>
+						<p>Please fill out the form below and never miss out on Pamela's activties.</p>	
+					</div>
+			
+			
+					<form action="mailto:pam@pamelasdiner.com" enctype="text/plain" method="post" onsubmit="return validate();">
+						<div class="form_name">
+							<input type="text" placeholder=" " name="name" required>
+							<label for="name" class="label_name">
+								<span class="content_name">Name</span>
+							</label>
+						</div>
+
+						<div class="form_name">
+							<!-- Made zipcode text type for styling reasons
+							Javascript code checks if input is a number and alerts the user appropriately -->
+							<input type="text" placeholder=" " id="zipcode" name="zipcode"  size="20">
+							<label for="zipcode" class="label_name">
+								<span class="content_name">Zip Code</span>
+							</label> 
+						</div>
+
+						<div class="form_name">
+							<input type="email" id="email" name="email" placeholder=" " required >
+							<label for="email" class="label_name" max-length="100px" >
+								<span class="content_name">Email</span>
+							</label>
+							
+						</div>
+			
+						<!-- Technique for styling checkboxes
+						Learned here: https://stackoverflow.com/questions/4148499/how-to-style-a-checkbox-using-css -->
+						<div class="checkbox">
+							<label>
+								<p>Subscribe to our newsletter</p>
+								<input type="checkbox" id="checkbox" name="signup" value="yes">
+								<span></span>	
+							</label>
+							
+						</div>
+
+						<div class="submit">
+							<input type="submit" alt="submit" value="submit">
+						</div>
+						<!-- <div class="input_fields">
+							<label for="uname" required>Name:</label> <br/>
+							<input type="text" id="uname" name="uname" placeholder="Your Name" size="20" maxlength ="250">
+			
+							<label for="zipcode">Zip code</label> <br>
+							<input type="number" id="zipcode" name="zipcode" value="" size="20"><br/><br/>
+			
+							<label for="email" required>Please provide your email address:</label><br/>
+							<input type="email" id="email" name="email" value="" placeholder = "abc@defg.com" required ><br/><br/>
+			
+							<label>Subscribe to our newsletter</label><br/>
+							<input type="checkbox" id="signup" name="signup" value="yes"><br/><br/>
+
+						</div> --> 
+					</form>
+	
+			</div> 
+		</div>
+		</div>
+		
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+		<div class="footer_content">
+			<div class="footer_form">
+				<h1>Subscribe to our food &lt3</h1><br>
+				<a id="subscribe" href="contact.html">Subscribe
+				</a><br>
+			</div>
+		
+			<br>
+			<ul class="socials">
+				<table>
+					<a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+					<a href="https://www.facebook.com/pamelasdiner/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/pgpamelasdiner" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="mailto:pam@pamelasdiner.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+					<br>
+					
+						<li><p>555-555-555</p></li>
+						<li><p>3703 Forbes Ave, Pittsburgh, PA 15213</p></li>
+				</table>
+			</ul>
+		</div>
+		<div class="footer_bottom">
+		&copy; Pamela's diner | Designed by Ire Alarape
+		</div>
+	</footer> 
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway:wght@800&display=swap');
+
+body{
+    background: url('../images/dot-grid.png') repeat;
+}
+.menu_container{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu_title{
+    margin-top: 10%;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #dca8b6;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Favorites menu card. */
+.cards{
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+.card{
+    width: 29%;
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 12px 12px 2px 1px rgb(0,0,0,0.2);
+    transform: scale(1.03);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border-radius: 25px;
+}
+.card h1{
+    position: relative;
+    top: 70%;
+    left: 10px;
+    color: white;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.card h3{
+    position: relative;
+    top: 70%;
+    left: 10px;
+    color: #dca8b6;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+.card p{
+    position: relative;
+    top: 72%;
+    left: 10px;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Flash card backgrounds */
+.potatobackground{
+    background: url("../images/potatoes.jpeg");
+    background-attachment: cover;
+    background-repeat: no-repeat;
+}
+.eggsandwichbackground{
+    background: url("../images/eggsandwich.jpeg");
+    background-attachment: cover;
+    background-repeat: no-repeat;
+}
+.meateggsbackground{
+    background: url("../images/meat&eggs.jpeg");
+    background-attachment: cover;
+    background-repeat: no-repeat;  
+}
+
+#fullmenu_title{
+    width: 100%;
+    margin-top: 5%;
+    height: 100px;
+    text-align: center;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+iframe{
+    margin-top: 0%;
+    margin-bottom: 40px;
+    width: 60%;
+    height: 80%;
+    box-shadow: 12px 12px 2px 1px rgb(0,0,0,0.2); 
+    border-radius: 10px;
+}

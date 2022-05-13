@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Permanent+Marker&family=Raleway:wght@800&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* MAIN SLIDING IMAGE CSS */
+.slider_container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	align-items: center;
+}
+.slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+.slides input{
+	display: none;
+}
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+.slide img{
+	width: 100%;
+	height: 100%;
+}
+
+/* Manual slide navigation css */
+.navigation_manual{
+	position: absolute;
+	top: 35%;
+	left: 23%;
+	width: 800px;
+	margin-top: 460px;
+	display: flex;
+	justify-content: center;
+}
+.manual_btn{
+	border: 2px solid #dca8b6;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.manual_btn:not(:last-child){
+	margin-right: 40px;
+}
+.manual_btn:hover{
+	background: #dca8b6;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+
+/* Automatic navigation */
+.navigation_auto{
+	position: absolute;
+	top: 35%;
+	left: 23%;
+	width: 800px;
+	margin-top: 460px;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	/* margin-top: 460px; */
+}
+.navigation_auto div{
+	border: 2px solid #dca8b6;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+.navigation_auto div:not(:last-child){
+	margin-right: 40px;
+}
+#radio1:checked ~ .navigation_auto .auto_btn1{
+	background: #dca8b6;
+}
+#radio2:checked ~ .navigation_auto .auto_btn2{
+	background: #dca8b6;
+}
+#radio3:checked ~ .navigation_auto .auto_btn3{
+	background: #dca8b6;
+}
+#radio4:checked ~ .navigation_auto .auto_btn4{
+	background: #dca8b6;
+}
+
+
+/* Title that says Pamelas diner */
+.main_heading{
+	margin:auto;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+.main_heading h1{
+	position: absolute;
+	top: 40%;
+	left: 27%; 
+	font-size: 70px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	text-align: center;
+
+}
+.main_heading h3{
+	position: absolute;
+	top: 49%;
+	left: 27%; 
+	font-size: 15px;
+	text-align: left;
+}
+/* Order online button */
+.main_heading a{
+	position: absolute;
+	font-size: 20px;
+	top: 55%;
+	left: 27%; 
+	letter-spacing: 1px;
+	border: 2px solid white;
+	border-radius: 25px;
+	color: inherit;
+	text-decoration: none;
+	padding: 12px; 
+	font-family: 'Nunito Sans', sans-serif;
+	transition: 0.5s;
+}
+.main_heading a:hover{
+	border-color: #dca8b6
+}
+
+
+
+.main_section{
+    text-align: left;
+    padding: 50px 50px;
+    width: 100%;
+    height: 500px;
+	background-color: #f4f4f4;
+	background: url('../images/dot-grid.png') repeat;
+}
+
+
+/* ABOUT US STYLING */
+.main_section img{
+	width: 600px;
+	height: 400px;
+	margin-left: 17%;
+	z-index: 1;
+	opacity: 0.8;
+}
+.aboutus_container{
+	z-index: 3;
+	padding-right: 15px;
+	display: flex;
+	position: relative;
+}
+
+.aboutus_info{
+	position: absolute;
+	left: 54%;
+	top: 10%;
+	width: 500px;
+	height: 150px;
+	z-index: 4;
+}
+.aboutus_info h1{
+	font-size: 30px;
+	letter-spacing: 4px;
+	margin-left: 27px;
+	font-family: 'Raleway', sans-serif;
+	padding-left: 80px;
+	
+}
+.aboutus_info p{
+	background: rgba(161, 205, 241,0.8);
+	padding: 15px;
+	padding-left: 70px;
+	padding-right: 70px;
+	font-family: 'Nunito Sans', sans-serif;
+	
+}
+.aboutus_footer{
+	position: absolute;
+	left: 4%;
+	top: 75%;
+	width: 200px;
+	height: 150px;
+	z-index: 4;
+}
+.aboutus_footer p{
+	background: rgba(220, 168, 182,0.6);
+	padding: 20px;
+	font-family: 'Nunito Sans', sans-serif;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 13px;
+	padding-left: 10px;
+}
+
+.page_divider{
+	height: 20px;
+	margin-top: -5px;
+	width: 100%;
+	background-color: #9b6859;
+}
+
+/* NAV AND LOGO STYLING */
+.logo{
+	width: 90px;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	margin-left: 100px;
+}
+.nav_container{	
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 100px;	
+	z-index: 11;
+	background-color: rgba(0,0,0,0.4);
+	backdrop-filter: blur(15px); 
+	box-shadow: 0 20px 30px rgba(0,0,0,0.15);  
+}
+.alternate_nav{
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 100px;	
+	z-index: 11;
+	background-color: rgba(0,0,0,0.4);
+	backdrop-filter: blur(20px); 
+	box-shadow: 0 20px 30px rgba(0,0,0,0.15) ;  
+}
+.background_image{
+	width: 100%;
+	height: auto;
+}
+nav{
+	position: fixed;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 11;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 8vh;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.nav_links{
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	margin-right: 30px;
+	z-index: 11;
+}
+.nav_links li{
+	list-style: none;
+	display: inline-block;
+}
+.nav_links li a{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 15px;
+	position: relative;	
+}
+.nav_links li a:before{
+	content: "";
+	position: absolute;
+	background-color: #DCA8B6;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -4px;
+	transition: 0.3s;
+}
+.nav_links li a:hover:before{
+	width: 100%;
+}
+
+.nav_links li .selected:hover:before{
+	width: 0%;
+}
+
+li .selected{
+	padding: 10px; 
+	border: 2px solid #DCA8B6;
+	border-radius: 25px;
+}
+.selected:hover{
+	background-color: #DCA8B6;
+}
+
+
+/* .selected:hover{
+	width: 0%;
+	background-color: #DCA8B6;
+} */
+/* .selected:hover{
+	background-color: #DCA8B6;
+} */
+
+.pink{
+	color: #DCA8B6;
+}
+
+
+
+
+
+
+
+
+/* FOOTER STYLES */
+.footer{
+	background: #18191a;
+	font-family: 'Nunito Sans', sans-serif;
+	color: white;
+	height: 200px;
+	display: flex;
+	margin-top: auto;
+	position: relative;
+	align-items: center;
+}
+.footer_content{
+	width: 100%;
+	display: flex;
+}
+
+/* styling ideas: 
+https://www.youtube.com/watch?v=zdA3qZNH1vc */
+.footer_form{
+	float: left;
+	/* padding-right: 50%; */
+	margin-left: 26%;
+	margin-bottom: 30px;
+	/* margin-top: 40px; */
+	font-size: 14px;
+	text-align: center;
+}
+.socials{
+	list-style: none;
+	color: white;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-top: 10px;
+	margin-left: 10%;
+}
+.footer .footer_bottom{
+	height: 20px;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	left: 0px;
+	bottom: 10px;
+	/* padding-right: 5%; */
+	position: absolute;
+	padding-top: 0px;
+	font-size: 10px;
+}
+.socials p{
+	margin-top: 5px;
+	font-size: 15px;
+	color: grey;
+	margin-left: 10px;
+}
+/* Footer subscribe button */
+.footer_form a{
+	border: 2px solid white;
+	border-radius: 25px;
+	text-decoration: none;
+	color: inherit;
+	padding: 12px; 
+	align-items: center;
+	transition: 0.5s;
+}
+#subscribe:hover{
+	border-color: #DCA8B6;
+}
+.socials a{
+	text-decoration: none;
+	list-style: none;
+	color: white;
+	padding: 10px;	
+}
+/* All icons transform */
+.fa{
+	transition: 0.2s;
+}
+.fa:hover{
+	color: #DCA8B6;
+}
+
+/* 
+Button hover effect inspired by: 
+https://www.youtube.com/watch?v=ANLgG1RtFVM */
+
+

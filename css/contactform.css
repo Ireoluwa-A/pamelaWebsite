@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway:wght@800&display=swap');
+
+/* FORM BACKGROUND STYLING */
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+.form_background{
+    background-image: url('../images/wood2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 830px;
+    align-items: center;
+    
+}
+.background_blur{
+    width: inherit;
+    height: inherit;
+    align-items: center;
+    backdrop-filter: blur(8px); 
+    display: flex;
+}
+
+
+
+.form_container{
+    width: 45%;
+    height: 550px;
+    margin: auto;
+    padding-top: 70px;
+    background-color: #f5f5f5;
+    box-shadow: 12px 12px 2px 1px rgb(0,0,0,0.2); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+}
+.form_title{
+    margin-top: 0px;
+    text-align: center;
+}
+
+.form_title h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 2px;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #f5f5f5;    
+}
+.submit input{
+    width: 140px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: -40px;
+    transition: 0.3s;
+}
+.submit input:hover{
+    border-color: #a1cdf1;
+}
+
+#checkbox{
+    visibility: hidden;
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.checkbox span{
+    height: 20px;
+    width: 20px;
+    border: 1px solid grey;
+    margin-left: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: 0.2s;
+}
+.checkbox p{
+    float: left;
+}
+
+[type=checkbox]:checked + span {/* <-- Style its checked state */
+    background: #a1cdf1;
+  }
+
+
+
+
+/* FORM ANIMATION STYLING */
+.form_name{
+    width: 50%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+/* Change background of input. box */
+/* source: 
+https://stackoverflow.com/questions/5617703/background-color-in-input-and-text-fields */
+.form_name input[type="text"],textarea{
+    background-color: #f5f5f5;
+}
+
+#email[type="email"],textarea{
+    background-color: #f5f5f5;
+}
+
+
+/* FORM INPUT ANIMATION CSS
+INSPIRED BY: */
+
+.form_name input{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 20px;
+    outline: none;
+    border: none;
+}
+
+.form_name label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form_name label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #a1cdf1;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+.content_name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease; 
+}
+
+/* placeholder-shown method for checking if input is empty */
+/* Source: stack overflow */
+/* https://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css-on-a-page-i-am-visiting-and-do-no */
+
+.form_name input:focus + .label_name .content_name,
+.form_name input:not(:placeholder-shown) + .label_name .content_name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #a1cdf1; 
+}
+
+.form_name input:focus + .label_name::after, 
+.form_name input:not(:placeholder-shown) + .label_name::after{
+    transform: translateX(0%)
+}
+

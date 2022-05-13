@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Permanent+Marker&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway:wght@800&display=swap');
+
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #666;
+    
+
+}
+
+/* Parallax scrolling idea source: 
+https://www.youtube.com/watch?v=JttTcnidSdQ */
+.pimg1, .pimg2{
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.pimg1{
+    background-image: url('../images/diner\ location\ 2.jpeg'); 
+    min-height: 500px;
+    width: auto;
+    margin: auto;
+}
+.pimg2{
+    background-image: url('../images/diner\ location\ 2.jpeg');
+    min-height: 400px;
+}
+
+.section{
+    text-align: left;
+    padding: 10px 50px;
+    width: 100%;
+    height: 750px;
+}
+
+.section_light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+/* When and where to meet us title */
+.ptext{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+    color: #000;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-weight: 50px;
+}
+
+
+/* Accordion locations and hours styling */
+.locations_container{
+    width: 100%;
+    margin: 0;
+    z-index: 10;
+}
+.locations_container iframe{
+    /* float: left; */
+    width: 100%;
+    display: block;
+    margin: auto;
+
+    margin-left: 10%;
+}
+
+.hours_container{ 
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 0;
+	padding: 1em;
+	border-left: 1px dotted #ccc;
+    z-index: 10;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+table th{
+    width: 100%;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-bottom: 10px;
+    /* color: black; */
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 2px solid #9b6859
+}
+table td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+table tr{
+    width: 100%;
+    font-size: 20px;
+
+}
+
+
+/* Accordion styling */
+#accordion .ui-accordion-header {
+    background-color: #f4f4f4;
+    color: black;
+    margin: 0px;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+#accordion .ui-accordion-content {
+    width: 100%;
+    background-color: #f3f3f3;
+    color: #777;
+    display: flex;
+    align-items: center;
+    font-size: 10pt;
+    line-height: 16pt;
+    border: none;
+  }
+
+
+
+

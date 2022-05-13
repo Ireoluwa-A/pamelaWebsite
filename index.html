@@ -1,0 +1,152 @@
+<!DOCTYPE html> 	
+<html lang="en"> 	
+<head> 
+
+	<meta charset="utf-8"> 
+	<meta name="author" content="Ireoluwa Alarape">
+	<meta name="keywords" content="Pamela's Diner website">
+	<meta name="description" content="Pamela's Diner website">
+
+
+	<title>Pamela's diner</title>
+
+	<!-- Favicon icon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+	<script src="js/scripts.js" ></script>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery-ui.min.js" ></script>
+
+	<!-- Custom css -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+
+	<!-- Font awesome style sheet for footer icons -->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body> 
+	
+	<div class="nav_container">
+		<nav>
+			<div class="logo">
+				<a href = "index.html"><img class="logo" src="images/logo.png" alt="Pamela's diner logo"> </a>
+			</div>
+			<ul class="nav_links">
+				<li><a href="menu.html" title="Browse Pamela's menu">Menu</a> </li>
+				<li><a href="locationsandhours.html">Locations & Hours</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="media.html">What's Everyone Saying</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="main_heading">
+		<h1>PAMELA'S DINER</h1>
+		<h3>Serving the <span class="pink">best breakfast</span> in Pittsburgh since 1980.</h3>
+		<a href="https://www.toasttab.com/pamelas-diner-shadyside-5527-walnut-st/v3" target="_blank">Order Online</a>
+	</div>
+
+	<!-- Image slider adapted from:
+		Coding snow on youtube:
+	https://www.youtube.com/watch?v=0wvrlOyGlq0 -->
+
+	<!-- Made it full page -->
+	<div class="slider_container">
+		<div class="slider">
+			<div class="slides">
+				<input type="radio" name="radio_btn" id="radio1">
+				<input type="radio" name="radio_btn" id="radio2">
+				<input type="radio" name="radio_btn" id="radio3">
+				<input type="radio" name="radio_btn" id="radio4">
+				
+				<!-- Slide images -->
+				<div class="slide first">
+					<img src="images/crepes6.jpg" alt="crepes image">
+				</div>
+				<div class="slide">
+					<img src="images/crepes2.jpg" alt="crepes image">
+				</div>
+				<div class="slide">
+					<img src="images/crepes strawberries.jpeg" alt="crepes img">
+				</div>
+				<div class="slide">
+					<img src="images/crepes3.jpg" alt="crepes image">
+				</div>
+
+				<!-- Automatic sliding -->
+				<div class="navigation_auto">
+					<div class="auto_btn1"></div>
+					<div class="auto_btn2"></div>
+					<div class="auto_btn3"></div>
+					<div class="auto_btn4"></div>
+				</div>
+
+				<!-- Manual navigation -->
+				<div class="navigation_manual">
+					<label for="radio1" class="manual_btn"></label>
+					<label for="radio2" class="manual_btn"></label>
+					<label for="radio3" class="manual_btn"></label>
+					<label for="radio4" class="manual_btn"></label>
+				</div>
+
+				<!-- Overlay radio and auto buttons for both manual and automatic sliding -->
+			</div>
+		</div>
+	</div>
+
+	<hr class="page_divider">
+
+	<section class="main_section">
+		<div class="aboutus_container">
+			<img src="./images/aboutuspic.jpeg" alt="pamela diner building">
+			<div class="aboutus_info">
+				<h1>ABOUT US</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Proin eget iaculis metus. Maecenas tincidunt maximus dolor 
+					fringilla viverra. Praesent molestie accumsan lectus vitae cursus. 
+					Pellentesque rutrum elit eget nisi rutrum sagittis. 
+					Suspendisse quis pellentesque sapienorem. Sed mattis purus sit amet felis finibus fermentum. 
+					Curabitur varius aliquet lectus et ullamcorper.
+				</p>
+			</div>
+			<div class="aboutus_footer">
+				<p><i class="fa fa-map-marker" aria-hidden="true"></i>  Shadyside Oak Location</p>
+			</div>
+		</div>
+	</section>
+
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+		<div class="footer_content">
+			<div class="footer_form">
+				<h1>Subscribe to our food &lt3</h1><br>
+				<a id="subscribe" href="contact.html">Subscribe
+				</a><br>
+			</div>
+			<br>
+			<ul class="socials">
+				<table>
+					<a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+					<a href="https://www.facebook.com/pamelasdiner/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/pgpamelasdiner" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="mailto:pam@pamelasdiner.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+					<br>
+					
+						<li><p>555-555-555</p></li>
+						<li><p>3703 Forbes Ave, Pittsburgh, PA 15213</p></li>
+				</table>
+			</ul>
+		</div>
+		<div class="footer_bottom">
+		&copy; Pamela's diner | Designed by Ire Alarape
+		</div>
+	</footer> 
+
+</body>
+
+</html>

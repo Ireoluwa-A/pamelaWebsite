@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Permanent+Marker&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway:wght@800&display=swap');
+
+body{
+    text-align: center;
+    background: url('../images/dot-grid.png') repeat;
+
+}
+.media_container{
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    padding-top: 120px;
+}
+.media_container h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+.media_container h3{
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+/* Underline so it doesnt use 100% of width */
+.media_container h3:after{
+    content: ""; 
+    display: block;
+    margin: 0 auto; 
+    width: 45%; 
+    padding-top: 20px; 
+    border-bottom: 2px solid #dca8b6
+}
+#content-gallery{
+    border-radius: 25px;
+    width: 90%;
+    height: 80%;
+    margin-left: 75px;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.gallery_item{
+    padding: 50px;
+    /* border: 2px solid black; */
+}
